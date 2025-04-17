@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>회원가입 폼</title>
+    <!-- css의 3가지 적용 방법 중, 내부CSS는 style 태그 안에 css의 코드를 작성하는 방법으로,
+     가장 보편적인 방법-->
+    <style>
+        td{
+            font-size:9px;
+            color:white;
+            background-color: #c6b8ff;
+        }
+        input{
+            background-color: #c6b8ff;
+        }
+    </style>
+</head>
+<body>
+    <table border="1px" widht="500px" style="text-align: center;", align="center">
+        <tr>
+            <td colspan="2">회원가입</td>
+        </tr>
+        <tr>
+            <td style="font-size: 9px;">아이디</td>
+            <td><input type="text" placeholder="아이디"> </td>
+        </tr>
+        <tr>
+            <td style="font-size: 9px;">비밀번호</td>
+            <td><input type="password" placeholder="비밀번호" maxlength="8"> </td>
+        </tr>
+        <tr>
+            <td style="font-size: 9px;">이름</td>
+            <td><input type="text" placeholder="이름"> </td>
+        </tr>
+        <tr>
+            <td style="font-size: 9px;">이메일</td>
+            <td><input type="text" placeholder="메일 아이디 입력">
+                @
+                <select style="color:white; background-color:#c6b8ff">
+                    <option value="">naver.com</option>
+                    <option value="">daum</option>
+                    <option value="">google</option>
+                </select>
+            </td>
+        </tr>
+        <tr>
+            <td style="font-size: 9px;"> 수신여부</td>
+            <td style="font-size: 9px;">
+                <input type="radio" name="receive"> 동의
+                <input type="radio" name="receive"> 미동의
+            </td>
+        </tr>
+        <tr>
+            <td style="font-size: 9px;">보유기술</td>
+            <td style="font-size: 9px;">
+                <input type="checkbox">Java
+                <input type="checkbox">MySQL
+                <input type="checkbox">Spring
+                <input type="checkbox">Linux
+            </td>
+        </tr>
+        <tr>
+            <td colspan="2">
+                <button style="color:white; background-color: #c6b8ff;">회원 가입</button>
+            </td>
+        </tr>
+    </table>
+</body>
+</html>
