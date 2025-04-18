@@ -4,10 +4,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        /* class의 값 중에 btn이 포함되어 있는.. */
+        button[class*="btn"]{
+            background-color: aquamarine;
+            border-radius: 5px;
+        }
+    </style>
 </head>
 <body>
-    <button></button>
-    <button></button>
-    <button></button>
+    <button class="btn-primary">버튼 1</button><br>
+    <button class="secondary-btn">버튼 2</button><br>
+    <button class="button">버튼 3</button>
 </body>
 </html>
