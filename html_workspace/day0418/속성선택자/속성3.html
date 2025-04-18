@@ -8,15 +8,15 @@
         /*아래의 두개의 링크의 차이점이라면,
          1) href값이 틀림(따라서 선택지가 될 수 있음)
          2) taget 속성의 존재여부(따라서 선택지가 될 수 있음) */
-         a[target]{
+         a[href^="https"]{
             text-decoration: none; /*링크 아래의 밑줄 없애기*/
-            color : red;
+            color : pink;
          }
-   </style>
+    </style>
 </head>
 <body>
     <!-- a 태그는 taget을 지정하지 않으면 디폴트가 _self -->
-    <a href="https://www.google.com" target="_blank">이 링크를 누르면 새로운 탭으로 열림</a><br>
-    <a href="http://www.daum.net">이 링크를 누르면 현재 페이지가 전환됨</a>
+    <a href="https://www.google.com">구글</a><br>
+    <a href="http://www.daum.net">테스트</a>
 </body>
 </html>
